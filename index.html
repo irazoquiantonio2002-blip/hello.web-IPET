@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IPET | Capacitación en Seguridad y Salud en el Trabajo</title>
+  <meta name="description" content="IPET forma profesionales en seguridad y salud en el trabajo con programas prácticos y certificaciones oficiales (CSST, Red Conocer). Solicita información y capacita a tu equipo.">
+  <meta name="keywords" content="capacitación en seguridad y salud en el trabajo, cursos CSST, certificación Red Conocer, primeros auxilios, seguridad industrial, capacitación empresarial, IPET">
+  <meta property="og:title" content="IPET | Instituto de Preparación y Educación en Salud">
+  <meta property="og:description" content="Formación que salva vidas, educación que transforma. Programas certificados en salud y seguridad laboral.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="img/logo-ipet-icon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════════
+       LOADER
+  ══════════════════════════════════════════════════════ -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-bulb">
+      <img src="img/logo-ipet-icon.png" alt="">
+    </div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    <span class="loader-text">Cargando...</span>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════════════════ -->
+  <header id="navbar" role="banner">
+    <div class="container">
+      <div class="nav-inner">
+
+        <a href="#hero" class="nav-logo" aria-label="IPET — inicio">
+          <div class="nav-logo-icon" aria-hidden="true">
+            <img src="img/logo-ipet-icon.png" alt="">
+          </div>
+          <div class="nav-logo-copy">
+            <span>IPET</span>
+            <span>Preparación y Educación en Salud</span>
+          </div>
+        </a>
+
+        <nav aria-label="Navegación principal">
+          <ul class="nav-links">
+            <li><a href="#why">Por qué IPET</a></li>
+            <li><a href="#ambientes">Áreas de Formación</a></li>
+            <li><a href="#proceso">Proceso</a></li>
+            <li><a href="#producto">Certificaciones</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <a href="#contacto" class="btn-gold nav-cta" style="font-size:13px; padding:12px 26px;">
+          Solicitar Información
+        </a>
+
+        <button class="hamburger" id="hamburger"
+                aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mob-menu" aria-label="Menú móvil">
+      <a href="#why">Por qué IPET</a>
+      <a href="#ambientes">Áreas de Formación</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#producto">Certificaciones</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#contacto">Solicitar Información →</a>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════════════════ -->
+  <main>
+    <section id="hero" aria-labelledby="hero-heading">
+
+      <!-- Parallax background image (fixed) -->
+      <div class="hero-bg" aria-hidden="true"></div>
+      <!-- Dark overlays -->
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+      <!-- Grid texture -->
+      <div class="hero-grid" aria-hidden="true"></div>
+      <!-- Canvas particle orbs -->
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+      <!-- Light shafts -->
+      <div class="hero-rays" aria-hidden="true">
+        <div class="hero-ray r1"></div>
+        <div class="hero-ray r2"></div>
+        <div class="hero-ray r3"></div>
+        <div class="hero-ray r4"></div>
+        <div class="hero-ray r5"></div>
+      </div>
+      <!-- Film grain overlay -->
+      <div class="hero-grain" aria-hidden="true"></div>
+      <!-- One-shot scan reveal -->
+      <div class="hero-scanline" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-content">
+
+          <!-- Live badge -->
+          <div class="hero-badge" id="hero-badge" aria-hidden="true">
+            <div class="badge-dot"></div>
+            Certificado CSST · Acreditado Red Conocer
+          </div>
+
+          <!-- Animated title -->
+          <h1 class="hero-title" id="hero-heading">
+            <span class="line"><span>Formación que</span></span>
+            <span class="line"><span>salva vidas,</span></span>
+            <span class="line"><span class="accent">educación que transforma.</span></span>
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="hero-sub" id="hero-sub">
+            IPET forma a los profesionales que cuidan la <strong>salud y la seguridad</strong> de tu equipo. Programas prácticos, instructores especializados y certificaciones reconocidas para transformar tu entorno laboral.
+          </p>
+
+          <!-- CTAs -->
+          <div class="hero-ctas" id="hero-ctas">
+            <a href="#contacto" class="btn-gold">
+              Solicitar Cotización
+              <i class="fa-solid fa-arrow-right" style="font-size:12px;"></i>
+            </a>
+            <a href="#ambientes" class="btn-outline">
+              <i class="fa-regular fa-lightbulb" style="font-size:15px; color:var(--gray);"></i>
+              Ver Áreas de Formación
+            </a>
+          </div>
+
+          <!-- Trust bar -->
+          <div class="hero-trust" id="hero-trust" aria-label="Credenciales">
+            <div class="trust-item">
+              <i class="fa-solid fa-shield-halved"></i>
+              Certificación CSST
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-certificate"></i>
+              Acreditación Red Conocer
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-user-doctor"></i>
+              Instructores Especializados
+            </div>
+          </div>
+
+        </div><!-- /.hero-content -->
+      </div>
+
+      <!-- Scroll cue -->
+      <div class="scroll-cue" aria-hidden="true">
+        <div class="scroll-mouse">
+          <div class="scroll-mouse-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         MARQUEE
+    ══════════════════════════════════════════════════ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-inner" id="marquee"></div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════
+         WHY — Features
+    ══════════════════════════════════════════════════ -->
+    <section id="why" aria-labelledby="why-heading">
+      <div class="container">
+
+        <div class="why-header">
+          <div class="reveal">
+            <div class="label">La diferencia IPET</div>
+            <h2 class="why-quote" id="why-heading">
+              Capacitar no es solo enseñar…
+              <em> es preparar a alguien para proteger vidas.</em>
+            </h2>
+          </div>
+          <p class="why-sub reveal d2">
+            Combinamos rigor técnico con metodología práctica para que cada participante egrese con habilidades reales, aplicables desde el primer día en su entorno laboral.
+          </p>
+        </div>
+
+        <div class="features-grid">
+
+          <div class="f-card reveal">
+            <div class="f-num" aria-hidden="true">01</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-notes-medical"></i>
+            </div>
+            <h3>Seguridad y Salud Laboral</h3>
+            <p>Programas de capacitación en seguridad e higiene, alineados a los estándares que exige la operación diaria en entornos de riesgo.</p>
+          </div>
+
+          <div class="f-card reveal d1">
+            <div class="f-num" aria-hidden="true">02</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-briefcase-medical"></i>
+            </div>
+            <h3>Primeros Auxilios y Soporte Vital</h3>
+            <p>Formación práctica para responder con confianza ante emergencias médicas dentro y fuera del entorno laboral.</p>
+          </div>
+
+          <div class="f-card reveal d2">
+            <div class="f-num" aria-hidden="true">03</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-building-user"></i>
+            </div>
+            <h3>Capacitación Empresarial</h3>
+            <p>Programas in-company diseñados a la medida de cada organización, para elevar el desempeño y reducir riesgos operativos.</p>
+          </div>
+
+          <div class="f-card reveal d3">
+            <div class="f-num" aria-hidden="true">04</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-award"></i>
+            </div>
+            <h3>Certificación Acreditada</h3>
+            <p>Respaldo oficial CSST y Red Conocer que valida las competencias adquiridas ante empleadores y autoridades.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         AMBIENTES — Áreas de formación
+    ══════════════════════════════════════════════════ -->
+    <section id="ambientes" aria-labelledby="amb-heading">
+      <div class="container">
+
+        <div class="ambientes-top">
+          <div class="reveal">
+            <div class="label">Áreas de Formación</div>
+            <h2 class="section-title" id="amb-heading">
+              Un programa para cada<br>
+              <span class="gold">reto de tu operación</span>
+            </h2>
+            <p style="color:var(--gray-soft); margin-top:16px; font-size:15.5px; max-width:440px; line-height:1.7;">
+              Tres frentes de capacitación diseñados para cubrir las necesidades reales del sector salud, industria y empresa.
+            </p>
+          </div>
+          <div class="reveal d2">
+            <span class="ambiente-pill">¿Cuál necesita tu equipo?</span>
+          </div>
+        </div>
+
+        <div class="ambientes-grid">
+
+          <!-- Seguridad Industrial -->
+          <div class="amb-card reveal">
+            <img class="amb-img"
+              src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=1400&auto=format&fit=crop"
+              alt="Técnico con casco y equipo de protección personal realizando trabajo industrial seguro">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(75,155,232,0.15); border-color:rgba(75,155,232,0.4);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-hard-hat" style="color:#9AC8F5;"></i>
+              </div>
+              <h3>Seguridad Industrial</h3>
+              <p>Prevención de riesgos, uso de equipo de protección personal y protocolos para construcción, manufactura y energía.</p>
+              <div class="amb-temp">Sector Industria y Construcción</div>
+            </div>
+          </div>
+
+          <!-- Salud y Primeros Auxilios -->
+          <div class="amb-card reveal d1">
+            <img class="amb-img"
+              src="https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?q=80&w=1400&auto=format&fit=crop"
+              alt="Personal de salud aplicando un protocolo clínico de atención al paciente durante una práctica"
+              loading="lazy">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(255,255,255,0.1); border-color:rgba(255,255,255,0.3);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-heart-pulse" style="color:white;"></i>
+              </div>
+              <h3>Salud y Primeros Auxilios</h3>
+              <p>Soporte vital básico, atención de urgencias y protocolos clínicos para personal de salud y brigadistas.</p>
+              <div class="amb-temp">Sector Salud y Emergencias</div>
+            </div>
+          </div>
+
+          <!-- Capacitación Empresarial -->
+          <div class="amb-card reveal d2">
+            <img class="amb-img"
+              src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1400&auto=format&fit=crop"
+              alt="Equipo de profesionales en una sesión de capacitación empresarial in-company"
+              loading="lazy">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(75,155,232,0.15); border-color:rgba(75,155,232,0.4);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-people-group" style="color:#9AC8F5;"></i>
+              </div>
+              <h3>Capacitación Empresarial</h3>
+              <p>Programas in-company a la medida de tu organización, con seguimiento y evaluación de competencias.</p>
+              <div class="amb-temp">Formación Corporativa</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         PROCESO — How we work
+    ══════════════════════════════════════════════════ -->
+    <section id="proceso" aria-labelledby="proceso-heading">
+      <div class="container">
+
+        <div class="proceso-header reveal">
+          <div class="label">Cómo trabajamos</div>
+          <h2 class="section-title" id="proceso-heading">
+            Del diagnóstico a la <span class="gold">certificación</span>
+          </h2>
+          <p>Acompañamos a tu equipo en cada etapa, para que la capacitación se traduzca en resultados medibles y en un entorno laboral más seguro.</p>
+        </div>
+
+        <div class="proceso-grid">
+
+          <div class="proceso-step reveal">
+            <div class="step-number">Paso 01</div>
+            <h3>Diagnóstico & Asesoría</h3>
+            <p>Analizamos las necesidades de tu equipo o institución para recomendarte el programa de formación ideal.</p>
+          </div>
+
+          <div class="proceso-step reveal d1">
+            <div class="step-number">Paso 02</div>
+            <h3>Programa a Medida</h3>
+            <p>Diseñamos el contenido teórico-práctico con instructores especializados, adaptado al sector y nivel de riesgo.</p>
+          </div>
+
+          <div class="proceso-step reveal d2">
+            <div class="step-number">Paso 03</div>
+            <h3>Certificación & Seguimiento</h3>
+            <p>Evaluamos competencias, emitimos la certificación correspondiente y damos acompañamiento post-curso.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         CERTIFICACIONES — Respaldo oficial
+    ══════════════════════════════════════════════════ -->
+    <section id="producto" aria-labelledby="prod-heading">
+      <div class="container">
+        <div class="producto-wrap">
+
+          <!-- Info -->
+          <div class="reveal">
+            <div class="label">Respaldo Oficial</div>
+            <h2 class="section-title" id="prod-heading">
+              Certificaciones que dan<br>
+              <span class="gold">valor real a tu formación</span>
+            </h2>
+            <p class="producto-lead">
+              Cada programa de IPET está respaldado por acreditaciones oficiales, para que la capacitación de tu equipo tenga validez y reconocimiento ante empleadores y autoridades.
+            </p>
+
+            <ul class="feature-rows" aria-label="Beneficios de la certificación">
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-shield-halved"></i></div>
+                <div>
+                  <h4>Acreditación CSST</h4>
+                  <p>Centro de Capacitación en Seguridad y Salud en el Trabajo, registro CE0044-OC-081-19.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-certificate"></i></div>
+                <div>
+                  <h4>Red Conocer</h4>
+                  <p>Centro de Evaluación acreditado dentro de la Red de Prestadores de Servicio, registro CE0044-OC-081-19.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div>
+                  <h4>Enfoque Teórico-Práctico</h4>
+                  <p>Contenidos diseñados para aplicarse desde el primer día en el entorno laboral real.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-user-check"></i></div>
+                <div>
+                  <h4>Evaluación de Competencias</h4>
+                  <p>Cada egresado es evaluado bajo criterios claros antes de recibir su certificación.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Visual -->
+          <div class="reveal d2">
+            <div class="panel-scene">
+              <div class="led-panel-body"
+                   role="img" aria-label="Sellos de acreditación CSST y Red Conocer de IPET">
+                <img src="img/badge-csst.png" alt="Sello de acreditación CSST — Centro de Capacitación en Seguridad y Salud en el Trabajo">
+                <img src="img/badge-redconocer.png" alt="Sello de acreditación Red Conocer — Centro de Evaluación de competencias">
+              </div>
+              <div class="p-badge pb-tl" aria-hidden="true">
+                <div class="p-badge-dot"></div>
+                Acreditaciones vigentes
+              </div>
+              <div class="p-badge pb-br" aria-hidden="true">
+                <i class="fa-solid fa-check" style="color:var(--blue-accent);"></i>
+                CE0044-OC-081-19
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         STATS
+    ══════════════════════════════════════════════════ -->
+    <section id="stats" aria-label="Datos clave de IPET">
+      <div class="container">
+        <div class="stats-grid reveal" role="list">
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="2" data-suffix=""
+                 aria-label="2 certificaciones oficiales">0</div>
+            <div class="stat-lbl">Certificaciones oficiales<br>respaldan cada programa</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="100" data-suffix="%"
+                 aria-label="100 por ciento">0</div>
+            <div class="stat-lbl">Formación con enfoque<br>práctico y teórico</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         SECTORES
+    ══════════════════════════════════════════════════ -->
+    <section id="sectores" aria-labelledby="sec-heading">
+      <div class="container">
+
+        <div class="sectores-hdr reveal">
+          <div class="label">Sectores</div>
+          <h2 class="section-title" id="sec-heading">
+            Formamos a quienes <span class="gold">cuidan cada sector</span>
+          </h2>
+          <p>Desde hospitales hasta plantas industriales, adaptamos cada programa al riesgo y las exigencias de tu sector.</p>
+        </div>
+
+        <div class="sectores-grid" role="list">
+          <div class="sector-card reveal" role="listitem">
+            <i class="fa-solid fa-hospital sector-icon" aria-hidden="true"></i>
+            <h3>Salud</h3>
+          </div>
+          <div class="sector-card reveal d1" role="listitem">
+            <i class="fa-solid fa-industry sector-icon" aria-hidden="true"></i>
+            <h3>Industria y Manufactura</h3>
+          </div>
+          <div class="sector-card reveal d2" role="listitem">
+            <i class="fa-solid fa-helmet-safety sector-icon" aria-hidden="true"></i>
+            <h3>Construcción</h3>
+          </div>
+          <div class="sector-card reveal d3" role="listitem">
+            <i class="fa-solid fa-oil-well sector-icon" aria-hidden="true"></i>
+            <h3>Energía</h3>
+          </div>
+          <div class="sector-card reveal d4" role="listitem">
+            <i class="fa-solid fa-building sector-icon" aria-hidden="true"></i>
+            <h3>Empresas y Corporativos</h3>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         CONTACTO
+    ══════════════════════════════════════════════════ -->
+    <section id="contacto" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <div class="contact-hdr reveal">
+          <div class="label">Contacto</div>
+          <h2 class="section-title" id="contact-heading">
+            Capacita a tu equipo <span class="gold">con IPET</span>
+          </h2>
+          <p>Solicita información sobre nuestros programas. Te respondemos a la brevedad.</p>
+        </div>
+
+        <div class="contact-box reveal">
+
+          <!-- Info panel -->
+          <div class="contact-info">
+            <h3>Atención Personalizada</h3>
+            <p class="ci-sub">Instituto de Preparación y Educación en Salud. Formación que salva vidas, educación que transforma.</p>
+
+            <ul class="ci-list">
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Ubicación</h4>
+                  <!-- TODO: agregar la dirección real de IPET -->
+                  <p>Dirección pendiente de confirmar por el cliente.</p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Teléfono</h4>
+                  <!-- TODO: agregar el teléfono real de IPET -->
+                  <p><a href="tel:0000000000">Teléfono pendiente de confirmar</a></p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>WhatsApp</h4>
+                  <p>Escríbenos y con gusto te asesoramos.</p>
+                  <!-- TODO: reemplazar por el número real de WhatsApp de IPET -->
+                  <a href="https://wa.me/520000000000" target="_blank"
+                     rel="noopener noreferrer" class="ci-wa-link">
+                    Abrir chat →
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div><!-- /.contact-info -->
+
+          <!-- Form -->
+          <div class="contact-form-wrap">
+            <h3>Solicitar Información</h3>
+            <form id="wa-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="f-name">Nombre completo</label>
+                  <input type="text" id="f-name" class="form-control"
+                         placeholder="Ej. Nombre Apellido" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="f-interest">¿Qué te interesa?</label>
+                  <select id="f-interest" class="form-control">
+                    <option>Información general</option>
+                    <option>Seguridad y Salud en el Trabajo</option>
+                    <option>Primeros Auxilios y Soporte Vital</option>
+                    <option>Capacitación Empresarial In-Company</option>
+                    <option>Certificación de Competencias</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="f-msg">Cuéntanos tu necesidad</label>
+                <textarea id="f-msg" class="form-control" rows="4" required
+                          placeholder="Describe a tu equipo, sector o cualquier detalle relevante…"></textarea>
+              </div>
+              <button type="submit" class="form-submit">
+                <i class="fa-brands fa-whatsapp"></i>
+                Enviar a WhatsApp
+              </button>
+              <p class="form-note">
+                Al enviar serás redirigido a WhatsApp para continuar la conversación.
+              </p>
+            </form>
+          </div>
+
+        </div><!-- /.contact-box -->
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <img src="img/logo-ipet-icon.png" alt="IPET">
+          <span>IPET</span>
+        </div>
+        <p class="footer-copy">
+          &copy; <span id="year"></span> IPET — Instituto de Preparación y Educación en Salud. Todos los derechos reservados.
+        </p>
+        <!-- Sin redes sociales confirmadas por el cliente: solo se deja el acceso directo a WhatsApp -->
+        <div class="footer-socials">
+          <a href="https://wa.me/520000000000" target="_blank"
+             rel="noopener noreferrer" class="footer-soc" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════════════════
+       FLOATING WHATSAPP
+  ══════════════════════════════════════════════════════ -->
+  <a href="https://wa.me/520000000000?text=Hola%2C%20visit%C3%A9%20el%20sitio%20de%20IPET%20y%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n."
+     target="_blank" rel="noopener noreferrer"
+     class="wa-btn" aria-label="Contactar por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
